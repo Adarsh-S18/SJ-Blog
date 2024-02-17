@@ -5,6 +5,9 @@ import Sidebar from "../../components/sidebar/Sidebar";
 import "./home.css";
 import axios from "axios";
 import { useLocation } from "react-router";
+import CategoryList from "../../components/category-list/CategoryList";
+import MenuPosts from "../../components/menu-posts/MenuPosts";
+import Footer from "../../components/footer/Footer";
 
 export default function Home() {
   const [posts, setPosts] = useState([]);
@@ -20,9 +23,20 @@ export default function Home() {
   return (
     <>
       <Header />
+      <div>
+      <CategoryList/>
+      </div>
+      <div className="title">
+     <h1> Featured Posts</h1>
+    </div>
       <div className="home">
         <Posts posts={posts} />
-        <Sidebar />
+        {/* <Sidebar /> */}
+        <MenuPosts />
+      </div>
+      <div>
+
+      <Footer />
       </div>
     </>
   );

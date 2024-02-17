@@ -22,7 +22,7 @@ export default function TopBar() {
       <div className='logo'>Sanuj Blogs</div>
       <div className='links'>
         <Link to='/' className='link'>HomePage</Link>
-        <Link to='/contact-page' className='link'>Contact</Link>
+        <Link to='/contact-form' className='link'>Contact</Link>
         <Link to='/' className='link'>About</Link>
         <Link to='/' className='link'>About</Link>
 

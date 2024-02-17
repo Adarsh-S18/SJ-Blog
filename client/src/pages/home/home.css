@@ -1,3 +1,8 @@
 .home{
+    margin-top: 20px;
     display: flex;
 }
+.postTitle{
+    text-align: center;
+}
+

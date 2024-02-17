@@ -10,6 +10,7 @@ import { useContext } from "react";
 import { Context } from "./context/Context";
 import Adminpage from "./pages/adminpage/Adminpage";
 import AddCategory from "./pages/addcategory/AddCategory";
+import Contact from "./components/contact/Contact";
 
 function App() {
   const { user } = useContext(Context);
@@ -21,6 +22,7 @@ function App() {
           <Home />
         </Route>
         <Route path="/register">{user ? <Home /> : <Register />}</Route>
+        <Route path="/contact-form"> <Contact /> </Route>
         <Route path="/login">{user ? <Home /> : <Login />}</Route>
         <Route path="/write">{user ? <Write /> : <Register />}</Route>
         <Route path="/settings">{user ? <Settings /> : <Register />}</Route>
